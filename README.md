@@ -26,13 +26,24 @@ GREEKS + STRESS TESTS + PRODUCT RISKS
 INDICATIVE TERM SHEET
 ```
 
-## Project scope
+## Project Scope
+
+This repository represents the **V1** of the project, intentionally kept focused on a controlled and fully defensible equity-derivatives universe.
 
 - Equity structured products on **one underlying at a time**.
-- Same-currency transactions; current demo scope uses **USD**.
-- No basket, worst-of, cross-asset correlation, FX or quanto modelling.
-- Supported demo underlyings: META, NVDA, AAPL, MSFT, AMZN, TSLA and S&P 500.
-- Supported products: Vanilla, Digital, Barrier, Reverse Convertible, ELN, Athena, Phoenix, Memory Phoenix, Range Accrual and Strip of Digitals.
+- Same-currency transactions only; the current demo scope uses **USD**.
+- No basket, worst-of, cross-asset correlation, FX or quanto modelling in V1.
+- Supported demo underlyings: **META, NVDA, AAPL, MSFT, AMZN, TSLA and S&P 500**.
+- Supported products: **Vanilla, Digital, Barrier, Reverse Convertible, ELN, Athena, Phoenix, Memory Phoenix, Range Accrual and Strip of Digitals**.
+
+The objective of V1 is to keep the pricing, construction and risk workflow **simple, consistent and fully explainable**, rather than expanding the product universe before the underlying market-data and modelling assumptions are robust.
+
+A **V2 is currently being prepared** to extend the framework to:
+- **multi-asset structures**, including baskets and worst-of payoffs;
+- **cross-asset correlation modelling**;
+- **multiple currencies**;
+- **FX and quanto effects**;
+- a broader catalogue of supported structured products.
 
 ## Natural-Language Processing pipeline
 
