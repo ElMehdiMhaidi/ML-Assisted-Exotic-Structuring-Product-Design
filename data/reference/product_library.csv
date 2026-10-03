@@ -1,0 +1,11 @@
+product_family,description,primary_objective,pricing_method,path_dependent
+Vanilla,European call / put for direct single-name directional exposure.,Participation / directional,Black-Scholes closed form,No
+Digital,Cash-or-nothing terminal payoff above a contractual strike.,Binary payoff,Black-Scholes digital closed form,No
+Barrier,Single-name down-and-out call with a fixed downside knock-out barrier.,Conditional upside,Conditional Monte Carlo with Brownian-bridge survival,Yes
+Reverse Convertible,Yield-enhancement note: bond plus economically short put exposure.,Income / yield enhancement,Bond + Black-Scholes short put decomposition,No
+ELN,Simple single-name equity-linked income note using bond + embedded put economics.,Income / yield enhancement,Bond + Black-Scholes embedded put decomposition,No
+Athena,Single-name autocallable with fixed coupons while alive and conditional downside protection.,Autocall income,Single-asset Monte Carlo under Q,Yes
+Phoenix,"Single-name autocallable with conditional coupons, coupon barrier and protection barrier.",Conditional income,Single-asset Monte Carlo under Q,Yes
+Memory Phoenix,Phoenix with memory coupons: missed coupons can be recovered later if conditions are met.,Conditional income + memory,Single-asset Monte Carlo under Q,Yes
+Range Accrual,Coupon accrues while the single underlying remains inside a contractual range.,Range income,Single-asset Monte Carlo under Q,Yes
+Strip of Digitals,Several digital payoffs across different terminal strikes.,Stepped binary payoff,Sum of Black-Scholes digitals,No

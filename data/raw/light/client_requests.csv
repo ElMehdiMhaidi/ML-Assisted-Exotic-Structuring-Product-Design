@@ -1,0 +1,31 @@
+client_name,client_id,client_type,request
+Alpha AM,CL001,Asset Manager,"We want a 2-year income solution on META. USD 5m. Target annual income around 8%, autocall acceptable, with a 35% downside buffer."
+Helios Private Bank,CL002,Private Bank,"Client wants an 18-month income note on Apple. USD 2m. Around 7% annual coupon, early redemption is fine, with a 70% protection barrier."
+Cedar Grove AM,CL003,Asset Manager,"We want a 3-year Phoenix on Nvidia. USD 6m. Conditional coupon around 9%, autocall acceptable and 35% downside buffer."
+Northbridge Family Office,CL004,Family Office,"We want a 2-year memory Phoenix on Microsoft. USD 4m. Recurring income is the objective, with missed coupons recoverable and a 65% protection barrier."
+Mariner PB,CL005,Private Bank,"Need an 18-month Athena on Microsoft. USD 3m. Target coupon 6%, early redemption acceptable, with a 70% protection barrier."
+Summit AM,CL006,Asset Manager,"Client wants a 2-year single-name autocallable on Amazon with regular income. USD 8m. Target around 8%, 35% downside tolerance."
+Montclair PB,CL007,Private Bank,"Need a 1-year reverse convertible on Apple. USD 1m. Target coupon 7%, no autocall, and the client accepts equity downside at maturity."
+Stonebridge AM,CL008,Asset Manager,"We want a 2-year enhanced-yield note on META. USD 5m. Around 8% annual income, no autocall, single underlying."
+Polar Private Office,CL009,Family Office,"Looking for an 18-month equity-linked note on Microsoft. USD 2m. Target yield 6%, no early redemption and moderate downside tolerance."
+Argent Private Office,CL010,Family Office,I want a 1-year digital payoff on Amazon. USD 2m. Pay a fixed amount if AMZN finishes above the initial level.
+Westlake FO,CL011,Family Office,Client wants a 1-year digital payoff on NVDA. USD 3m. Fixed payout if Nvidia finishes above 110% of the initial level.
+Tamarind FO,CL012,Family Office,I want an 18-month barrier call on Amazon. USD 1m. Use a downside knock-out barrier and no coupon.
+Regent PB,CL013,Private Bank,Client wants a 2-year barrier call on NVDA. USD 1.3m. Use a downside knock-out barrier and upside call exposure.
+Keystone Investments,CL014,Asset Manager,We want a 1-year range accrual on the S&P 500. USD 9m. Income should accrue while the index stays between 85% and 115% of its initial level.
+Belgravia Wealth,CL015,Private Bank,Client is neutral on Tesla and wants a 12-month range accrual. USD 800k. Income should accrue while TSLA remains inside a broad corridor.
+Boreal AM,CL016,Asset Manager,Need an 18-month strip of digitals on META. USD 4m. Several terminal strikes and fixed payouts.
+Maplewood FO,CL017,Family Office,Client wants a strip of digital payoffs on Apple over 1 year. USD 1.5m. Several terminal strike levels are acceptable.
+Meridian Wealth,CL018,Private Bank,We want a simple 1-year call option on Tesla. USD 1.5m. Client is bullish and wants pure upside exposure without coupons or autocall.
+Cobalt Investments,CL019,Asset Manager,"Need a 2-year call option on META. USD 6m. Bullish view, no income objective, straightforward upside participation."
+Sienna PB,CL020,Private Bank,"Client wants a 2-year conservative income note on Apple. USD 1m. No autocall, target income around 5%, and downside protection matters."
+Falcon AM,CL021,Asset Manager,"We want a 3-year income product on Nvidia. USD 10m. Autocall is acceptable, target coupon around 10%, and a 40% downside buffer is acceptable."
+Riviera FO,CL022,Family Office,I want recurring income on META for 30 months. USD 3m. Early redemption is acceptable and I would like a 65% protection barrier.
+Beacon AM,CL023,Asset Manager,"We want a 2-year memory Phoenix on Apple. USD 7m. Target coupon 8%, autocall acceptable and missed coupons recoverable."
+Harbour PB,CL024,Private Bank,Client wants enhanced yield on Amazon over 1 year. USD 2m. No autocall. Comfortable receiving equity downside if the stock finishes below strike.
+Oakridge FO,CL025,Family Office,I want a fixed binary-style payout on Tesla in 12 months. USD 1m. No coupons and no early redemption.
+Pioneer AM,CL026,Asset Manager,We are neutral on the S&P 500 for one year. USD 12m. We want income while the index stays in a broad range.
+Arden PB,CL027,Private Bank,Client wants an autocallable income solution on Microsoft for 2 years. USD 2.5m. Simple fixed coupon mechanics are preferred.
+Juniper FO,CL028,Family Office,"We want a Phoenix on Amazon for 2 years. USD 2m. Conditional coupon, autocall observations and a 65% protection barrier."
+Peakstone AM,CL029,Asset Manager,"Need a 2-year equity-linked income note on NVDA. USD 8m. No autocall, target yield 7%, moderate downside risk."
+Solstice FO,CL030,Family Office,I want straightforward upside participation in the S&P 500 over 18 months. USD 3m. No coupon and no autocall.

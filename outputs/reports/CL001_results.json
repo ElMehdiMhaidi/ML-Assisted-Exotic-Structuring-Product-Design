@@ -1,0 +1,645 @@
+{
+  "client": {
+    "client_id": "CL001",
+    "client_name": "Alpha AM",
+    "client_type": "Asset Manager",
+    "request_raw": "We want a 2-year income solution on META. USD 5m. Target annual income around 8%, autocall acceptable, with a 35% downside buffer.",
+    "underlyings": [
+      "META"
+    ],
+    "theme": "Technology",
+    "directional_view": "neutral",
+    "target_return": 0.08,
+    "return_type": "income",
+    "maturity_years": 2.0,
+    "notional": 5000000.0,
+    "currency": "USD",
+    "downside_tolerance": 0.35,
+    "capital_protection": 0.65,
+    "income_preference": true,
+    "autocall_acceptance": true,
+    "risk_appetite": "medium",
+    "complexity_tolerance": "high",
+    "requested_product_family": null,
+    "memory_requested": false
+  },
+  "recommendations": [
+    {
+      "product_family": "Athena",
+      "score": 0.4166666666666667
+    },
+    {
+      "product_family": "Phoenix",
+      "score": 0.33
+    },
+    {
+      "product_family": "ELN",
+      "score": 0.09666666666666666
+    },
+    {
+      "product_family": "Reverse Convertible",
+      "score": 0.056666666666666664
+    },
+    {
+      "product_family": "Memory Phoenix",
+      "score": 0.03333333333333333
+    }
+  ],
+  "top3": [
+    {
+      "recommendation": {
+        "product_family": "Athena",
+        "score": 0.4166666666666667
+      },
+      "spec": {
+        "product_family": "Athena",
+        "underlyings": [
+          "META"
+        ],
+        "maturity": 2.0,
+        "notional": 5000000.0,
+        "currency": "USD",
+        "params": {
+          "autocall_barrier": 0.95,
+          "protection_barrier": 0.6,
+          "coupon": 0.019171537349525623,
+          "frequency": 4,
+          "display_label": "Athena",
+          "reference_spots": {
+            "META": 590.0
+          }
+        }
+      },
+      "pricing": {
+        "fair_value": 100.00000000000004,
+        "solved_term_name": "coupon",
+        "solved_term_value": 0.019171537349525623,
+        "pricing_method": "Single-asset Monte Carlo under Q",
+        "diagnostics": {
+          "mc_se": 0.04772169086078396,
+          "base_pv": 95.18590424229991,
+          "coupon_unit_slope": 251.10640163759257
+        }
+      },
+      "outcome": {
+        "expected_return": 0.02318549200384742,
+        "sharpe_ratio": -0.3565336897312324,
+        "expected_shortfall_95": 0.004283368725224593,
+        "probability_of_loss": 0.04352
+      },
+      "risk": {
+        "delta": 12.410423978021257,
+        "gamma": -118.91635337288875,
+        "vega": -25.218567705562123,
+        "stresses": {
+          "Spot -20%": {
+            "price": 94.74077948611502,
+            "pnl": -5.259220513885026
+          },
+          "Spot -10%": {
+            "price": 98.22413062876895,
+            "pnl": -1.7758693712310958
+          },
+          "Vol +10 pts": {
+            "price": 97.24343415012913,
+            "pnl": -2.75656584987091
+          },
+          "Spot -20% + Vol +10 pts": {
+            "price": 89.84720277999703,
+            "pnl": -10.15279722000301
+          }
+        },
+        "spot_profile": [
+          {
+            "spot_pct": 60.0,
+            "price": 81.01560513688074,
+            "delta": 58.37396636293626,
+            "gamma": -167.75153262752696,
+            "vega": -50.02720799733069
+          },
+          {
+            "spot_pct": 65.0,
+            "price": 85.431017966155,
+            "delta": 53.7595386478511,
+            "gamma": -33.798755778171596,
+            "vega": -59.01909841985784
+          },
+          {
+            "spot_pct": 70.0,
+            "price": 89.23248427193359,
+            "delta": 48.479007221035175,
+            "gamma": -97.1287699661616,
+            "vega": -64.13762603669682
+          },
+          {
+            "spot_pct": 75.0,
+            "price": 92.28163801122415,
+            "delta": 41.660016235967845,
+            "gamma": -64.41990741592463,
+            "vega": -63.72342460777247
+          },
+          {
+            "spot_pct": 80.0,
+            "price": 94.74077948611502,
+            "delta": 35.797383815327066,
+            "gamma": -58.00983383643654,
+            "vega": -59.712874321142095
+          },
+          {
+            "spot_pct": 85.0,
+            "price": 96.69516768590213,
+            "delta": 30.34916952308997,
+            "gamma": -94.22261213277494,
+            "vega": -53.81892851874781
+          },
+          {
+            "spot_pct": 89.99999999999999,
+            "price": 98.22413062876895,
+            "delta": 23.011780970035645,
+            "gamma": -109.13478305557334,
+            "vega": -45.35590453979026
+          },
+          {
+            "spot_pct": 95.0,
+            "price": 99.24690893635429,
+            "delta": 16.22434200623708,
+            "gamma": -22.555801435437672,
+            "vega": -32.55382010005974
+          },
+          {
+            "spot_pct": 100.0,
+            "price": 100.00000000000004,
+            "delta": 12.410423978021257,
+            "gamma": -118.91635337288875,
+            "vega": -25.218567705562123
+          },
+          {
+            "spot_pct": 104.99999999999999,
+            "price": 100.50946122064667,
+            "delta": 8.13543772366394,
+            "gamma": -96.11507823063192,
+            "vega": -17.88913564289274
+          },
+          {
+            "spot_pct": 109.99999999999999,
+            "price": 100.81891284403994,
+            "delta": 5.191958022260934,
+            "gamma": -37.44127474966774,
+            "vega": -12.045875098727521
+          },
+          {
+            "spot_pct": 114.99999999999999,
+            "price": 101.0063061722874,
+            "delta": 2.7653148026381302,
+            "gamma": -96.06570695574135,
+            "vega": -6.703497752209131
+          },
+          {
+            "spot_pct": 120.0,
+            "price": 101.08341145232484,
+            "delta": 2.008655931250658,
+            "gamma": 24.308088241902226,
+            "vega": -4.42395805235023
+          },
+          {
+            "spot_pct": 125.0,
+            "price": 101.14982938091985,
+            "delta": 0.8956416650292454,
+            "gamma": -3.984893379893606,
+            "vega": -2.5100890202772064
+          },
+          {
+            "spot_pct": 129.99999999999997,
+            "price": 101.18150409952723,
+            "delta": 0.509346514050435,
+            "gamma": -23.36332606866165,
+            "vega": -1.04269629363003
+          },
+          {
+            "spot_pct": 135.0,
+            "price": 101.18877396294877,
+            "delta": 0.04036593478922157,
+            "gamma": -8.581926000523765,
+            "vega": -0.2713648514607314
+          },
+          {
+            "spot_pct": 140.0,
+            "price": 101.18958304212249,
+            "delta": 0.22320552863845933,
+            "gamma": 19.489863211390457,
+            "vega": -0.6268503894325761
+          }
+        ],
+        "method": "Central bump-and-reprice with common random numbers"
+      }
+    },
+    {
+      "recommendation": {
+        "product_family": "Phoenix",
+        "score": 0.33
+      },
+      "spec": {
+        "product_family": "Phoenix",
+        "underlyings": [
+          "META"
+        ],
+        "maturity": 2.0,
+        "notional": 5000000.0,
+        "currency": "USD",
+        "params": {
+          "autocall_barrier": 0.95,
+          "coupon_barrier": 0.7,
+          "protection_barrier": 0.6,
+          "coupon": 0.02450968498383792,
+          "memory": false,
+          "frequency": 4,
+          "display_label": "Phoenix",
+          "reference_spots": {
+            "META": 590.0
+          }
+        }
+      },
+      "pricing": {
+        "fair_value": 100.00000000000007,
+        "solved_term_name": "coupon",
+        "solved_term_value": 0.02450968498383792,
+        "pricing_method": "Single-asset Monte Carlo under Q",
+        "diagnostics": {
+          "mc_se": 0.05735489573856392,
+          "base_pv": 95.18590424229991,
+          "coupon_unit_slope": 196.41606005440622
+        }
+      },
+      "outcome": {
+        "expected_return": 0.025181946081212103,
+        "sharpe_ratio": -0.2811447364235826,
+        "expected_shortfall_95": 0.004479060159463614,
+        "probability_of_loss": 0.04364
+      },
+      "risk": {
+        "delta": 18.201022881359208,
+        "gamma": -157.89001445103423,
+        "vega": -33.61692579777085,
+        "stresses": {
+          "Spot -20%": {
+            "price": 91.83320351437543,
+            "pnl": -8.166796485624644
+          },
+          "Spot -10%": {
+            "price": 97.30397728615173,
+            "pnl": -2.696022713848336
+          },
+          "Vol +10 pts": {
+            "price": 96.39691716991923,
+            "pnl": -3.6030828300808366
+          },
+          "Spot -20% + Vol +10 pts": {
+            "price": 85.80244854258467,
+            "pnl": -14.1975514574154
+          }
+        },
+        "spot_profile": [
+          {
+            "spot_pct": 60.0,
+            "price": 70.98452709387927,
+            "delta": 79.1866510210049,
+            "gamma": -137.32742294585876,
+            "vega": -44.34614711960023
+          },
+          {
+            "spot_pct": 65.0,
+            "price": 77.2495870451073,
+            "delta": 79.24822880988103,
+            "gamma": -9.828952076986752,
+            "vega": -58.467056857698196
+          },
+          {
+            "spot_pct": 70.0,
+            "price": 83.01260363119914,
+            "delta": 75.39976159907233,
+            "gamma": -121.88695455623844,
+            "vega": -70.48652032848324
+          },
+          {
+            "spot_pct": 75.0,
+            "price": 87.87155683549047,
+            "delta": 66.55442909816003,
+            "gamma": -140.98047102088174,
+            "vega": -76.06631418367442
+          },
+          {
+            "spot_pct": 80.0,
+            "price": 91.83320351437543,
+            "delta": 57.42277540489411,
+            "gamma": -121.9575182975774,
+            "vega": -75.4339350223745
+          },
+          {
+            "spot_pct": 85.0,
+            "price": 94.94518753235977,
+            "delta": 47.24947780164648,
+            "gamma": -161.23217269015555,
+            "vega": -69.62057449244483
+          },
+          {
+            "spot_pct": 89.99999999999999,
+            "price": 97.30397728615173,
+            "delta": 35.21385294769068,
+            "gamma": -188.59388015020073,
+            "vega": -59.323749657281866
+          },
+          {
+            "spot_pct": 95.0,
+            "price": 98.88967133710847,
+            "delta": 24.8156770495104,
+            "gamma": -94.38532161635038,
+            "vega": -43.9386097290253
+          },
+          {
+            "spot_pct": 100.0,
+            "price": 100.00000000000007,
+            "delta": 18.201022881359208,
+            "gamma": -157.89001445103423,
+            "vega": -33.61692579777085
+          },
+          {
+            "spot_pct": 104.99999999999999,
+            "price": 100.74497923430532,
+            "delta": 11.750169408342614,
+            "gamma": -148.32059938616027,
+            "vega": -23.727637448067185
+          },
+          {
+            "spot_pct": 109.99999999999999,
+            "price": 101.183481755253,
+            "delta": 7.326794456588459,
+            "gamma": -55.07767892964921,
+            "vega": -15.750308266623847
+          },
+          {
+            "spot_pct": 114.99999999999999,
+            "price": 101.44822202184751,
+            "delta": 4.080254948249973,
+            "gamma": -113.43057252084066,
+            "vega": -9.286494283784208
+          },
+          {
+            "spot_pct": 120.0,
+            "price": 101.56505484581434,
+            "delta": 2.7477575032499146,
+            "gamma": 26.304477166050333,
+            "vega": -5.877827204665209
+          },
+          {
+            "spot_pct": 125.0,
+            "price": 101.6554329751058,
+            "delta": 1.3071561749089966,
+            "gamma": -5.118167862754319,
+            "vega": -3.3053797661047213
+          },
+          {
+            "spot_pct": 129.99999999999997,
+            "price": 101.70011930490803,
+            "delta": 0.7250465257431671,
+            "gamma": -29.180701771061024,
+            "vega": -1.4813329880894344
+          },
+          {
+            "spot_pct": 135.0,
+            "price": 101.71213246815384,
+            "delta": 0.12110747484292972,
+            "gamma": -11.620871889981288,
+            "vega": -0.48230564386955166
+          },
+          {
+            "spot_pct": 140.0,
+            "price": 101.71529827487436,
+            "delta": 0.3049787861183262,
+            "gamma": 21.181730676964605,
+            "vega": -0.8420759940783284
+          }
+        ],
+        "method": "Central bump-and-reprice with common random numbers"
+      }
+    },
+    {
+      "recommendation": {
+        "product_family": "Memory Phoenix",
+        "score": 0.03333333333333333
+      },
+      "spec": {
+        "product_family": "Phoenix",
+        "underlyings": [
+          "META"
+        ],
+        "maturity": 2.0,
+        "notional": 5000000.0,
+        "currency": "USD",
+        "params": {
+          "autocall_barrier": 0.95,
+          "coupon_barrier": 0.7,
+          "protection_barrier": 0.6,
+          "coupon": 0.022716000212393034,
+          "memory": true,
+          "frequency": 4,
+          "display_label": "Memory Phoenix",
+          "reference_spots": {
+            "META": 590.0
+          }
+        }
+      },
+      "pricing": {
+        "fair_value": 100.00000000000007,
+        "solved_term_name": "coupon",
+        "solved_term_value": 0.022716000212393034,
+        "pricing_method": "Single-asset Monte Carlo under Q",
+        "diagnostics": {
+          "mc_se": 0.05747634950057338,
+          "base_pv": 95.18590424229991,
+          "coupon_unit_slope": 211.92532632015428
+        }
+      },
+      "outcome": {
+        "expected_return": 0.024956924222690077,
+        "sharpe_ratio": -0.28063063753052575,
+        "expected_shortfall_95": 0.00604412802691783,
+        "probability_of_loss": 0.04364
+      },
+      "risk": {
+        "delta": 16.140470917527594,
+        "gamma": -133.4693800874831,
+        "vega": -30.725310594422695,
+        "stresses": {
+          "Spot -20%": {
+            "price": 92.93943158534915,
+            "pnl": -7.060568414650916
+          },
+          "Spot -10%": {
+            "price": 97.64893287899264,
+            "pnl": -2.351067121007432
+          },
+          "Vol +10 pts": {
+            "price": 96.67947423085829,
+            "pnl": -3.3205257691417813
+          },
+          "Spot -20% + Vol +10 pts": {
+            "price": 87.18916066389987,
+            "pnl": -12.810839336100202
+          }
+        },
+        "spot_profile": [
+          {
+            "spot_pct": 60.0,
+            "price": 73.82853403857376,
+            "delta": 78.23202344445264,
+            "gamma": -162.36516356961772,
+            "vega": -46.47097368841884
+          },
+          {
+            "spot_pct": 65.0,
+            "price": 79.91205935930736,
+            "delta": 74.68513735529356,
+            "gamma": -73.72698145047707,
+            "vega": -60.63493411972658
+          },
+          {
+            "spot_pct": 70.0,
+            "price": 85.23201113023487,
+            "delta": 67.90872616760062,
+            "gamma": -158.80214554886862,
+            "vega": -70.74379399030661
+          },
+          {
+            "spot_pct": 75.0,
+            "price": 89.51323260395135,
+            "delta": 58.05467954717116,
+            "gamma": -99.81645653475368,
+            "vega": -73.41551255529737
+          },
+          {
+            "spot_pct": 80.0,
+            "price": 92.93943158534915,
+            "delta": 49.39728747540677,
+            "gamma": -117.71665395269082,
+            "vega": -70.74964164360651
+          },
+          {
+            "spot_pct": 85.0,
+            "price": 95.60763854670711,
+            "delta": 40.703670210212195,
+            "gamma": -134.70369713832753,
+            "vega": -64.51154677471322
+          },
+          {
+            "spot_pct": 89.99999999999999,
+            "price": 97.64893287899264,
+            "delta": 30.4879660384195,
+            "gamma": -148.75155994694467,
+            "vega": -54.357639771372135
+          },
+          {
+            "spot_pct": 95.0,
+            "price": 99.01931603695564,
+            "delta": 21.695033406867736,
+            "gamma": -70.56010312894045,
+            "vega": -40.142540815326555
+          },
+          {
+            "spot_pct": 100.0,
+            "price": 100.00000000000007,
+            "delta": 16.140470917527594,
+            "gamma": -133.4693800874831,
+            "vega": -30.725310594422695
+          },
+          {
+            "spot_pct": 104.99999999999999,
+            "price": 100.66405220116292,
+            "delta": 10.464148712684107,
+            "gamma": -127.25121087854063,
+            "vega": -21.916536818456223
+          },
+          {
+            "spot_pct": 109.99999999999999,
+            "price": 101.05874739617296,
+            "delta": 6.577379236188818,
+            "gamma": -52.134639892855716,
+            "vega": -14.583401065097235
+          },
+          {
+            "spot_pct": 114.99999999999999,
+            "price": 101.29840560072584,
+            "delta": 3.6750700772508083,
+            "gamma": -112.63719123064675,
+            "vega": -8.456048011991157
+          },
+          {
+            "spot_pct": 120.0,
+            "price": 101.40210346601542,
+            "delta": 2.4862705627604953,
+            "gamma": 22.562884916368375,
+            "vega": -5.334395584089435
+          },
+          {
+            "spot_pct": 125.0,
+            "price": 101.48394667827424,
+            "delta": 1.2048615369767646,
+            "gamma": -2.0538248950785487,
+            "vega": -3.094784288204977
+          },
+          {
+            "spot_pct": 129.99999999999997,
+            "price": 101.52522747270652,
+            "delta": 0.667163819344907,
+            "gamma": -23.827674713210456,
+            "vega": -1.3859330241317025
+          },
+          {
+            "spot_pct": 135.0,
+            "price": 101.53664587040724,
+            "delta": 0.07488418671108832,
+            "gamma": -12.686911949977286,
+            "vega": -0.37015038986041304
+          },
+          {
+            "spot_pct": 140.0,
+            "price": 101.53790485788237,
+            "delta": 0.28220761763186886,
+            "gamma": 22.289976592908545,
+            "vega": -0.7878563871756228
+          }
+        ],
+        "method": "Central bump-and-reprice with common random numbers"
+      }
+    }
+  ],
+  "candidate_average": {
+    "expected_return": 0.0425146670793943,
+    "sharpe_ratio": -0.12357104064506927,
+    "expected_shortfall_95": 0.09573170981207872,
+    "probability_of_loss": 0.086952,
+    "recommendation_score": 0.18666666666666668
+  },
+  "ranking_meta": {
+    "Athena": {
+      "combined_score": 0.75,
+      "normalized_recommendation": 1.0,
+      "normalized_sharpe": 0.0,
+      "normalized_es": 1.0,
+      "normalized_probability_of_loss": 1.0
+    },
+    "Phoenix": {
+      "combined_score": 0.7301783505098072,
+      "normalized_recommendation": 0.7739130434782608,
+      "normalized_sharpe": 0.1487664004227825,
+      "normalized_es": 0.999140356810507,
+      "normalized_probability_of_loss": 0.9988936013276785
+    },
+    "Memory Phoenix": {
+      "combined_score": 0.5352349325868351,
+      "normalized_recommendation": 0.0,
+      "normalized_sharpe": 0.1497808811712988,
+      "normalized_es": 0.9922652478483632,
+      "normalized_probability_of_loss": 0.9988936013276785
+    }
+  }
+}

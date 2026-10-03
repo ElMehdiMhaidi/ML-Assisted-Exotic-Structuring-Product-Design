@@ -1,0 +1,77 @@
+{
+  "rows": 4000,
+  "span_validation_errors": 0,
+  "scope": "single_asset_usd_only",
+  "entity_counts": {
+    "PRODUCT": 2914,
+    "UNDERLYING": 4000,
+    "MATURITY": 4000,
+    "CAPITAL_PROTECTION": 622,
+    "CURRENCY": 4000,
+    "NOTIONAL": 4000,
+    "THEME": 1846,
+    "TARGET_RETURN": 2276,
+    "DOWNSIDE_TOLERANCE": 1793
+  },
+  "sequence_label_counts": {
+    "directional_view": {
+      "bullish": 1649,
+      "neutral": 1983,
+      "bearish": 368
+    },
+    "return_type": {
+      "capital_protection": 188,
+      "income": 1797,
+      "binary_payout": 678,
+      "unspecified": 340,
+      "participation": 671,
+      "range_income": 326
+    },
+    "income_preference": {
+      "no": 1380,
+      "yes": 2073,
+      "not_specified": 547
+    },
+    "autocall_acceptance": {
+      "not_specified": 1778,
+      "accept": 1085,
+      "reject": 1137
+    },
+    "risk_appetite": {
+      "medium": 1993,
+      "low": 1031,
+      "high": 976
+    },
+    "complexity_tolerance": {
+      "medium": 1545,
+      "high": 2008,
+      "low": 447
+    },
+    "memory_requested": {
+      "not_specified": 1643,
+      "no": 1930,
+      "yes": 427
+    }
+  },
+  "underlying_counts": {
+    "TSLA": 710,
+    "META": 665,
+    "MSFT": 625,
+    "AAPL": 673,
+    "NVDA": 661,
+    "AMZN": 666
+  },
+  "explicit_product_counts": {
+    "Vanilla": 288,
+    "Athena": 286,
+    "Phoenix": 315,
+    "None": 1086,
+    "ELN": 328,
+    "Reverse Convertible": 298,
+    "Memory Phoenix": 308,
+    "Barrier": 316,
+    "Digital": 252,
+    "Range Accrual": 249,
+    "Strip of Digitals": 274
+  }
+}

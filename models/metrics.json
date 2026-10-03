@@ -1,0 +1,11 @@
+{
+  "model": "RandomForestClassifier",
+  "scope": "single_asset_only",
+  "accuracy": 0.7292682926829268,
+  "roc_auc": 0.776035904325378,
+  "training_rows_after_single_asset_filter": 9820,
+  "train_rows": 7360,
+  "test_rows": 2460,
+  "supported_products": 10,
+  "note": "Uses the stored pairwise recommender_training.csv; no data generation and no GridSearch."
+}

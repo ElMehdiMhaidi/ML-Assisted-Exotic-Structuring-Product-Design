@@ -1,0 +1,20 @@
+product_family,risk_category,risk_name,description
+Reverse Convertible,Hedging,Gap / Hedging Risk,"Large spot moves can create hedge slippage around the strike or conversion region, where downside exposure changes rapidly."
+Reverse Convertible,Volatility,Skew Risk,Downside implied-volatility skew changes the value of the embedded short put and therefore the note economics.
+Reverse Convertible,Carry,Dividend Risk,Dividend assumptions alter forwards and the value of the embedded equity option.
+ELN,Hedging,Gap / Hedging Risk,Abrupt underlying moves can create residual hedging losses around the embedded option strike.
+ELN,Volatility,Skew Risk,The embedded equity option is sensitive to changes in downside volatility skew.
+Athena,Barrier,Barrier Risk,"Near autocall or protection barriers, hedge sensitivities can change sharply."
+Athena,Path Dependency,Autocall / Path Dependency Risk,Expected life and exposure depend on whether autocall conditions are met at observation dates.
+Athena,Hedging,Gap Risk,A large underlying move can cross a trigger or protection level before the hedge is adjusted.
+Phoenix,Barrier,Barrier Risk,"Coupon, autocall and protection barriers create sharp changes in sensitivities near trigger levels."
+Phoenix,Path Dependency,Autocall / Path Dependency Risk,"Coupon payments, memory features and early redemption depend on the realised path."
+Phoenix,Hedging,Gap Risk,"A discontinuous move can cross coupon, autocall or protection barriers before hedges are rebalanced."
+Digital,Discontinuity,Discontinuity / Hedging Risk,"Near the strike, the payoff changes abruptly and hedge sensitivities can become large and unstable."
+Digital,Volatility,Skew Risk,Digital value is sensitive to the local implied-volatility shape around the strike.
+Barrier,Barrier,Barrier Risk,"As spot approaches the knock-out barrier, hedge sensitivities can change sharply."
+Barrier,Hedging,Gap Risk,The underlying can jump through the barrier before the hedge is adjusted.
+Range Accrual,Range,Range Risk,"Near a range boundary, small spot moves can materially change future accrual."
+Range Accrual,Path Dependency,Path Dependency Risk,Accrual depends on the realised sequence of observations.
+Strip of Digitals,Discontinuity,Discontinuity / Hedging Risk,Each digital strike creates a region where hedge sensitivities can become large and unstable.
+Vanilla,Volatility,Volatility Risk,Option value and vega depend on implied volatility assumptions.

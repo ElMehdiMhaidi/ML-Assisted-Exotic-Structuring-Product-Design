@@ -1,0 +1,28 @@
+seed: 42
+
+recommendation:
+  top_k: 5
+  model: random_forest
+
+construction:
+  max_geometries: 20
+
+pricing:
+  mc_paths: 50000
+
+outcome_analysis:
+  equity_risk_premium: 0.04
+
+risk:
+  spot_bump: 0.02
+  vol_bump: 0.01
+  spot_grid_min: 0.6
+  spot_grid_max: 1.4
+  spot_grid_points: 17
+
+ranking:
+  final_top_k: 3
+  recommendation_weight: 0.25
+  sharpe_weight: 0.25
+  expected_shortfall_weight: 0.25
+  probability_of_loss_weight: 0.25
